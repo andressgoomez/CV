@@ -86,8 +86,7 @@
 body {
   background-color: var(--primary-color);
   font-family: 'Roboto Slab', serif;
-  margin: 0;
-  margin-top: 15px;
+  height: 705px;
   transition: all 0.3s ease-in-out;
   overflow-x: hidden;
 }
@@ -109,7 +108,7 @@ body {
   background-color: var(--tertiary-color);
   width: 1060px;
   min-width: 320px;
-  height: 615px;
+
   margin: 10px auto;
   border-radius: 15px;
   box-shadow: 2px 2px 5px 0px var(--shadow-color);
@@ -158,7 +157,6 @@ body {
   display: grid;
   grid-template-columns: 600px 400px;
   grid-column-gap: 10px;
-  height: 365px;
   justify-content: center;
   border-left: 7px solid var(--border-color);
   border-right: 7px solid var(--border-color);
@@ -167,6 +165,7 @@ body {
   border-bottom-right-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 18px;
 }
 
 .grid1 {
@@ -330,13 +329,11 @@ body {
 
 .card {
   width: 100%;
-  height: 100%;
   transform-style: preserve-3d;
   transform-origin: center right;
   transition: transform 1.5s;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
 }
 
 .card.is-flipped {
@@ -364,6 +361,10 @@ body {
 
 
 @media screen and (max-width: 1060px) {
+
+  body{
+    height: 1550px !important;
+  }
 
   .cvContainer {
     width: 500px;
@@ -438,6 +439,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+
+  body{
+    height: 1780px !important;
+  }
 
   .backContainer {
     width: 275px;
