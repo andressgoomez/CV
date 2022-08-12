@@ -11,14 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="darkModeContainer" id="darkModeContainer">
-    <img class="iconDarkmode" src="public/images/light.svg" alt="Light mode" width="50px" id="icon">
-    <a class="downloadBoton" href="public/files/Curriculum Vitae EN - Andrés Gomez.pdf" download="CV-Andres Gomez.pdf"
-      target="_blank">
-      <svg class="download"  width="22px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" width="45.812px" height="45.812px" viewBox="0 0 45.812 45.812"
-          style="enable-background:new 0 0 45.812 45.812;" xml:space="preserve">
+    <span data-tooltip="Change mode" data-tooltip-location="left"><img class="iconDarkmode"
+        src="public/images/light.svg" alt="Light mode" width="50px" id="icon"></span>
+    <span data-tooltip="Download PDF" data-tooltip-location="bottom">
+      <a class="downloadBoton" href="public/files/Curriculum Vitae EN - Andrés Gomez.pdf" download="CV-Andres Gomez.pdf"
+        target="_blank">
+        <svg class="download" width="22px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.812px" height="45.812px"
+          viewBox="0 0 45.812 45.812" style="enable-background:new 0 0 45.812 45.812;" xml:space="preserve">
           <path d="M21.407,34.002c0.367,0.37,0.944,0.573,1.521,0.573c0.515,0,1.153-0.203,1.52-0.572l11.399-11.481
             c0.561-0.563,0.726-1.408,0.418-2.139c-0.307-0.731-1.022-1.207-1.815-1.206l-3.72,0.03l0.054-16.288
             C30.777,1.306,29.469,0,27.854,0h-9.855c-1.612,0-2.922,1.306-2.929,2.919l0.054,16.284l-3.719-0.027
@@ -28,7 +31,7 @@
             c-0.68,0-1.239-0.539-1.239-1.217V22.309c0-1.622-1.282-2.938-2.905-2.938c-1.622,0-2.905,1.315-2.905,2.938v16.392
             c0,3.918,3.131,7.111,7.05,7.111h30.821c3.92,0,7.098-3.193,7.098-7.111V22.309C45.391,20.687,44.064,19.372,42.443,19.372z" />
         </svg>
-    </a>
+      </a></span>
   </div>
   <div class="scene scene--card">
     <div class="card">
@@ -52,7 +55,8 @@
           </div>
           <div class="gridC">
             <div class="flex">
-              <a class="logoLink logoLinkTel" target="_blank"
+              <a class="logoLink logoLinkTel" target="_blank" data-tooltip="Send message"
+              data-tooltip-location="right"
                 href="https://api.whatsapp.com/send?phone=5492262653967"><img class="social"
                   src="public/images/whatsapp.svg" alt="Telefono" width="27px">+54 9 2262 653967</a>
             </div>
@@ -63,11 +67,11 @@
               </a>
             </div>
             <div class="flex">
-              <a class="logoLink logoLinkLinkedin" href="https://www.linkedin.com/in/andressgomez/" target="_blank"><img
+              <a class="logoLink logoLinkLinkedin" href="https://www.linkedin.com/in/andressgomez/" target="_blank" data-tooltip="See LinkedIn" data-tooltip-location="right"><img
                   class="social" src="public/images/linkedin.svg" alt="LinkedIn" width="27px">LinkedIn</a>
             </div>
             <div class="flex">
-              <a class="logoLink logoLinkGitHub" href="https://github.com/andressgomez" target="_blank">
+              <a class="logoLink logoLinkGitHub" href="https://github.com/andressgomez" target="_blank" data-tooltip="See GitHub" data-tooltip-location="right">
                 <img class="social" src="public/images/githublink.svg" alt="GitHub" width="27px">
                 GitHub
               </a>
@@ -116,7 +120,8 @@
           <div class="grid2">
             <label class="cvTittle">Stack:</label>
             <div class="stack">
-              <a href="https://es.reactjs.org" target="_blank">
+              <a class="centerIcons" href="https://es.reactjs.org" target="_blank" data-tooltip="ReactJs"
+                data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -125,7 +130,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://nodejs.org/es/" target="_blank">
+              <a class="centerIcons" href="https://nodejs.org/es/" target="_blank" data-tooltip="NodeJs">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -134,7 +139,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajehtml.com/html/" target="_blank">
+              <a class="centerIcons" href="https://lenguajehtml.com/html/" target="_blank" data-tooltip="HTML"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -143,7 +149,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajecss.com/css/" target="_blank">
+              <a class="centerIcons" href="https://lenguajecss.com/css/" target="_blank" data-tooltip="CSS"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -152,7 +159,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajejs.com/javascript/" target="_blank">
+              <a class="centerIcons" href="https://lenguajejs.com/javascript/" target="_blank" data-tooltip="Javascript"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -165,7 +173,8 @@
 
             <label class="cvTittle">Technologies:</label>
             <div class="tecnologies">
-              <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank">
+              <a class="centerIcons" href="https://www.php.net/manual/es/intro-whatis.php" target="_blank"
+                data-tooltip="PHP" data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0, 0, 400,400">
                   <g>
@@ -175,7 +184,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://laravel.com" target="_blank">
+              <a class="centerIcons" href="https://laravel.com" target="_blank" data-tooltip="Laravel">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -184,7 +193,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://mariadb.org" target="_blank">
+              <a class="centerIcons" href="https://mariadb.org" target="_blank" data-tooltip="MariaDB">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -193,7 +202,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajejs.com/vuejs/" target="_blank">
+              <a class="centerIcons" href="https://lenguajejs.com/vuejs/" target="_blank" data-tooltip="VueJs">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -202,7 +211,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://jquery.com" target="_blank">
+              <a class="centerIcons" href="https://jquery.com" target="_blank" data-tooltip="JQuery">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -211,7 +220,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://github.com" target="_blank">
+              <a class="centerIcons" href="https://github.com" target="_blank" data-tooltip="GitHub"
+                data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0, 0, 400,391.85750636132315">
                   <g>
@@ -221,7 +231,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://www.trello.com" target="_blank">
+              <a class="centerIcons" href="https://www.trello.com" target="_blank" data-tooltip="Trello"
+                data-tooltip-location="bottom">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -230,7 +241,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://getbootstrap.com" target="_blank">
+              <a class="centerIcons" href="https://getbootstrap.com" target="_blank" data-tooltip="Bootstrap"
+                data-tooltip-location="bottom">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -239,16 +251,30 @@
                   </g>
                 </svg>
               </a>
+              <a class="centerIcons" href="https://styled-components.com" target="_blank"
+                data-tooltip="Styled Components" data-tooltip-location="bottom">
+                <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0, 0, 400,391.85750636132315">
+                  <g>
+                    <path
+                      d="M170.992 1.653 C -12.248 29.192,-57.893 275.105,103.053 367.680 C 161.049 401.039,239.969 401.039,297.965 367.680 C 430.468 291.465,429.910 100.098,296.964 24.674 C 260.791 4.152,212.764 -4.625,170.992 1.653 M277.735 140.930 C 277.763 150.707,277.398 158.946,276.923 159.239 C 275.807 159.929,269.720 157.816,269.720 156.739 C 269.720 153.073,265.459 158.113,262.550 165.219 C 260.677 169.794,258.008 176.056,256.619 179.135 C 255.230 182.214,254.174 185.076,254.273 185.496 C 254.372 185.916,254.040 186.260,253.535 186.260 C 253.030 186.260,253.263 188.408,254.053 191.034 C 258.153 204.656,244.361 219.964,230.356 217.336 L 226.774 216.664 230.793 212.912 C 234.416 209.531,234.877 208.529,235.460 202.773 C 236.274 194.730,238.207 190.974,243.134 187.864 C 246.084 186.002,247.596 183.973,249.389 179.472 C 250.690 176.208,253.506 169.509,255.648 164.585 C 260.556 153.304,260.580 153.544,254.198 150.576 C 247.995 147.692,247.040 144.336,250.312 136.920 C 251.306 134.667,252.988 130.651,254.049 127.994 L 255.980 123.163 266.832 123.159 L 277.684 123.155 277.735 140.930 M183.760 140.874 C 191.778 146.737,174.801 172.569,141.221 205.601 C 136.039 210.699,134.088 213.740,136.000 213.740 C 136.347 213.740,139.438 211.202,142.870 208.100 C 146.302 204.998,158.499 194.412,169.975 184.576 C 181.450 174.740,192.316 165.370,194.120 163.753 C 195.925 162.137,197.659 160.814,197.974 160.814 C 198.289 160.814,201.550 158.513,205.221 155.699 C 226.835 139.133,238.106 150.898,220.595 171.747 C 218.601 174.121,216.815 176.411,216.627 176.836 C 216.439 177.261,213.098 180.356,209.202 183.715 C 205.307 187.074,197.979 193.947,192.917 198.988 C 187.856 204.030,180.083 211.129,175.643 214.764 C 168.310 220.769,164.773 223.909,147.806 239.481 C 142.924 243.962,141.329 246.347,143.257 246.287 C 143.677 246.273,148.601 242.117,154.198 237.051 C 159.796 231.984,168.270 224.555,173.028 220.541 C 177.786 216.527,188.373 206.798,196.554 198.921 C 212.321 183.738,218.176 180.153,227.206 180.153 C 233.625 180.153,235.107 188.284,229.996 195.462 C 228.851 197.069,227.031 200.383,225.950 202.825 C 224.870 205.268,216.368 216.166,207.058 227.043 C 197.747 237.920,189.746 247.735,189.277 248.855 C 188.808 249.975,186.110 253.147,183.280 255.904 C 176.292 262.714,177.678 263.235,184.983 256.544 C 215.082 228.976,231.447 219.379,237.698 225.630 C 242.890 230.822,236.459 241.974,217.114 261.323 L 208.719 269.720 171.046 269.720 L 133.372 269.720 132.812 267.430 C 132.504 266.170,132.381 244.453,132.538 219.169 L 132.824 173.198 135.369 170.999 C 136.768 169.789,140.204 166.650,143.003 164.024 C 166.230 142.225,177.136 136.031,183.760 140.874 M288.961 162.850 C 289.575 162.850,290.076 163.308,290.076 163.868 C 290.076 164.427,290.763 164.885,291.603 164.885 C 292.443 164.885,293.130 165.344,293.130 165.903 C 293.130 166.463,293.622 166.921,294.224 166.921 C 294.826 166.921,298.504 168.982,302.398 171.501 C 306.292 174.020,309.922 176.081,310.464 176.081 C 311.007 176.081,311.450 176.539,311.450 177.099 C 311.450 177.659,311.878 178.117,312.400 178.117 C 312.923 178.117,317.497 180.751,322.566 183.969 L 331.781 189.822 331.776 194.402 C 331.771 198.594,325.105 205.598,321.121 205.598 C 320.829 205.598,318.309 207.201,315.522 209.160 C 312.734 211.120,310.239 212.723,309.977 212.723 C 309.715 212.723,304.210 216.158,297.743 220.356 C 291.276 224.555,285.532 227.990,284.978 227.990 C 284.423 227.990,283.969 228.448,283.969 229.008 C 283.969 231.834,278.993 228.187,278.913 225.301 C 278.881 224.165,300.122 209.985,306.361 206.977 C 309.448 205.489,324.682 195.094,324.682 194.475 C 324.682 193.742,320.863 190.331,320.042 190.331 C 319.742 190.331,314.228 186.896,307.789 182.697 C 301.350 178.499,295.831 175.064,295.525 175.064 C 292.381 175.064,277.840 163.583,279.042 162.049 C 281.404 159.033,282.256 158.869,285.088 160.886 C 286.605 161.966,288.348 162.850,288.961 162.850 M121.951 162.930 C 123.414 165.272,122.092 167.939,119.468 167.939 C 118.697 167.939,118.066 168.397,118.066 168.957 C 118.066 169.517,117.638 169.975,117.115 169.975 C 116.592 169.975,110.753 173.372,104.138 177.525 C 97.524 181.677,88.563 187.288,84.225 189.993 C 79.887 192.698,76.338 195.240,76.337 195.643 C 76.336 196.344,89.445 205.476,92.621 206.987 C 97.344 209.234,123.155 226.103,123.155 226.943 C 123.155 231.507,119.044 231.213,111.036 226.077 C 106.568 223.210,102.672 220.865,102.379 220.865 C 102.087 220.865,95.863 216.972,88.550 212.214 C 81.236 207.455,74.809 203.562,74.267 203.562 C 73.726 203.562,73.282 203.104,73.282 202.545 C 73.282 201.985,72.644 201.527,71.865 201.527 C 66.492 201.527,68.399 191.891,74.555 187.934 C 81.651 183.372,105.016 168.942,109.173 166.555 C 110.985 165.514,113.613 163.811,115.013 162.770 C 118.348 160.291,120.332 160.337,121.951 162.930 ">
+                    </path>
+                  </g>
+                </svg>
+              </a>
             </div>
+
             <label class="cvTittle">Languages:</label>
             <div class="lenguage">
-              <div class="flex">
-                <a class="lengLink" href="./index.html"><img class="leng" src="public/images/es.svg" alt="Español" width="30px">
-                <span class="lengText">Spanish (native)</span></a>
+              <div class="flex" data-tooltip="See in Spanish" data-tooltip-location="bottom">
+                <a class="lengLink" href="./index.html"><img class="leng" src="public/images/es.svg" alt="Español"
+                    width="30px">
+                  <span class="lengText">Spanish (native)</span></a>
               </div>
-              <div class="flex">
-                <a class="lengLink" href="./en.html"><img class="leng" src="public/images/en.svg" alt="Inglés" width="28px">
-                <span class="lengText">English (B2 First)</span></a>
+              <div class="flex" data-tooltip="See in English" data-tooltip-location="bottom">
+                <a class="lengLink" href="./en.html"><img class="leng" src="public/images/en.svg" alt="Inglés"
+                    width="28px">
+                  <span class="lengText">English (B2 First)</span></a>
               </div>
             </div>
         </section>
@@ -299,7 +325,7 @@
                 </div>
               </a>
 
-              <div class="a-box">
+              <a href="https://dbd-picker.netlify.app" target="_blank" class="a-box projectLink">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -313,9 +339,9 @@
                     React, Styled Components, CSS.
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="a-box projectMargin">
+              <a href="#" target="_blank" class="a-box projectLink projectMargin">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -329,9 +355,9 @@
                     React, Styled Components, CSS.
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="a-box projectMargin">
+              <a href="#" target="_blank" class="a-box projectLink projectMargin">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -340,12 +366,12 @@
                   </div>
                 </div>
                 <div class="text-container">
-                  <div class="projectTitle">Soon... </div>
+                  <div class="projectTitle">Proximamente... </div>
                   <div>
                     ...
                   </div>
                 </div>
-              </div>
+              </a>
 
             </div>
           </div>

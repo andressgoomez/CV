@@ -14,12 +14,13 @@
 
 <body>
   <div class="darkModeContainer" id="darkModeContainer">
-    <img class="iconDarkmode" src="public/images/light.svg" alt="Light mode" width="50px" id="icon">
-    <a class="downloadBoton" href="public/files/Curriculum Vitae - Andrés Gomez.pdf" download="CV-Andres Gomez.pdf"
-      target="_blank">
-      <svg class="download"  width="22px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" width="45.812px" height="45.812px" viewBox="0 0 45.812 45.812"
-          style="enable-background:new 0 0 45.812 45.812;" xml:space="preserve">
+    <span data-tooltip="Cambiar modo" data-tooltip-location="left"><img class="iconDarkmode"
+        src="public/images/light.svg" alt="Light mode" width="50px" id="icon"></span>
+    <span data-tooltip="Descargar PDF" data-tooltip-location="bottom"><a class="downloadBoton "
+        href="public/files/Curriculum Vitae - Andrés Gomez.pdf" download="CV-Andres Gomez.pdf" target="_blank">
+        <svg class="download " width="22px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.812px" height="45.812px"
+          viewBox="0 0 45.812 45.812" style="enable-background:new 0 0 45.812 45.812;" xml:space="preserve">
           <path d="M21.407,34.002c0.367,0.37,0.944,0.573,1.521,0.573c0.515,0,1.153-0.203,1.52-0.572l11.399-11.481
             c0.561-0.563,0.726-1.408,0.418-2.139c-0.307-0.731-1.022-1.207-1.815-1.206l-3.72,0.03l0.054-16.288
             C30.777,1.306,29.469,0,27.854,0h-9.855c-1.612,0-2.922,1.306-2.929,2.919l0.054,16.284l-3.719-0.027
@@ -29,7 +30,7 @@
             c-0.68,0-1.239-0.539-1.239-1.217V22.309c0-1.622-1.282-2.938-2.905-2.938c-1.622,0-2.905,1.315-2.905,2.938v16.392
             c0,3.918,3.131,7.111,7.05,7.111h30.821c3.92,0,7.098-3.193,7.098-7.111V22.309C45.391,20.687,44.064,19.372,42.443,19.372z" />
         </svg>
-    </a>
+      </a></span>
   </div>
   <div>
 
@@ -55,29 +56,32 @@
           </div>
           <div class="gridC">
             <div class="flex">
-              <a class="logoLink logoLinkTel" target="_blank"
-                href="https://api.whatsapp.com/send?phone=5492262653967"><img class="social"
-                  src="public/images/whatsapp.svg" alt="Telefono" width="27px">+54 9 2262 653967</a>
+              <a class="logoLink logoLinkTel" target="_blank" data-tooltip="Enviar mensaje"
+                data-tooltip-location="right" href="https://api.whatsapp.com/send?phone=5492262653967"><img
+                  class="social" src="public/images/whatsapp.svg" alt="Telefono" width="27px">+54 9 2262 653967</a>
             </div>
             <div class="flex">
-              <a class="logoLink logoLinkMail" href="mailto:andresgomezic@gmail.com">
+              <a class="logoLink logoLinkMail" href="mailto:andresgomezic@gmail.com" target="_blank"
+                >
                 <img class="social" src="public/images/gmail.svg" alt="Gmail" width="27px">
                 andresgomezic@gmail.com
               </a>
             </div>
             <div class="flex">
-              <a class="logoLink logoLinkLinkedin" href="https://www.linkedin.com/in/andressgomez/" target="_blank"><img
-                  class="social" src="public/images/linkedin.svg" alt="LinkedIn" width="27px">LinkedIn</a>
+              <a class="logoLink logoLinkLinkedin" href="https://www.linkedin.com/in/andressgomez/" target="_blank"
+                data-tooltip="Ver LinkedIn" data-tooltip-location="right">
+                <img class="social" src="public/images/linkedin.svg" alt="LinkedIn" width="27px">LinkedIn</a>
             </div>
             <div class="flex">
-              <a class="logoLink logoLinkGitHub" href="https://github.com/andressgoomez" target="_blank">
+              <a class="logoLink logoLinkGitHub" href="https://github.com/andressgoomez" target="_blank" data-tooltip="Ver GitHub" data-tooltip-location="right">
                 <img class="social" src="public/images/githublink.svg" alt="GitHub" width="27px">
                 GitHub
               </a>
             </div>
 
             <div class="flex">
-              <a class="logoLink logoLinkMap" target="_blank" href="https://goo.gl/maps/W3L98e1zseiDNGvdA"><img
+              <a class="logoLink logoLinkMap" target="_blank" href="https://goo.gl/maps/W3L98e1zseiDNGvdA" >
+                <img
                   class="social" src="public/images/maps.svg" alt="Maps" width="27px">La Plata, Argentina</a>
             </div>
           </div>
@@ -120,7 +124,8 @@
           <div class="grid2">
             <label class="cvTittle">Stack:</label>
             <div class="stack">
-              <a href="https://es.reactjs.org" target="_blank">
+              <a class="centerIcons" href="https://es.reactjs.org" target="_blank" data-tooltip="ReactJs"
+                data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -129,7 +134,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://nodejs.org/es/" target="_blank">
+              <a class="centerIcons" href="https://nodejs.org/es/" target="_blank" data-tooltip="NodeJs">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -138,7 +143,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajehtml.com/html/" target="_blank">
+              <a class="centerIcons" href="https://lenguajehtml.com/html/" target="_blank" data-tooltip="HTML"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -147,7 +153,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajecss.com/css/" target="_blank">
+              <a class="centerIcons" href="https://lenguajecss.com/css/" target="_blank" data-tooltip="CSS"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -156,7 +163,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajejs.com/javascript/" target="_blank">
+              <a class="centerIcons" href="https://lenguajejs.com/javascript/" target="_blank" data-tooltip="Javascript"
+                data-tooltip-location="top">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -169,7 +177,8 @@
 
             <label class="cvTittle">Tecnolog&iacute;as:</label>
             <div class="tecnologies">
-              <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank">
+              <a class="centerIcons" href="https://www.php.net/manual/es/intro-whatis.php" target="_blank"
+                data-tooltip="PHP" data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0, 0, 400,400">
                   <g>
@@ -179,7 +188,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://laravel.com" target="_blank">
+              <a class="centerIcons" href="https://laravel.com" target="_blank" data-tooltip="Laravel">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -188,7 +197,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://mariadb.org" target="_blank">
+              <a class="centerIcons" href="https://mariadb.org" target="_blank" data-tooltip="MariaDB">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -197,7 +206,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://lenguajejs.com/vuejs/" target="_blank">
+              <a class="centerIcons" href="https://lenguajejs.com/vuejs/" target="_blank" data-tooltip="VueJs">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -206,7 +215,7 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://jquery.com" target="_blank">
+              <a class="centerIcons" href="https://jquery.com" target="_blank" data-tooltip="JQuery">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -215,7 +224,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://github.com" target="_blank">
+              <a class="centerIcons" href="https://github.com" target="_blank" data-tooltip="GitHub"
+                data-tooltip-location="left">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0, 0, 400,391.85750636132315">
                   <g>
@@ -225,7 +235,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://www.trello.com" target="_blank">
+              <a class="centerIcons" href="https://www.trello.com" target="_blank" data-tooltip="Trello"
+                data-tooltip-location="bottom">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -234,7 +245,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://getbootstrap.com" target="_blank">
+              <a class="centerIcons" href="https://getbootstrap.com" target="_blank" data-tooltip="Bootstrap"
+                data-tooltip-location="bottom">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 400,400">
                   <g>
                     <path
@@ -243,7 +255,8 @@
                   </g>
                 </svg>
               </a>
-              <a href="https://styled-components.com" target="_blank">
+              <a class="centerIcons" href="https://styled-components.com" target="_blank"
+                data-tooltip="Styled Components" data-tooltip-location="bottom">
                 <svg class="tecnologie" width="40px" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0, 0, 400,391.85750636132315">
                   <g>
@@ -257,12 +270,12 @@
 
             <label class="cvTittle">Idiomas:</label>
             <div class="lenguage">
-              <div class="flex">
+              <div class="flex" data-tooltip="Ver en Español" data-tooltip-location="bottom">
                 <a class="lengLink" href="./index.html"><img class="leng" src="public/images/es.svg" alt="Español"
                     width="30px">
                   <span class="lengText">Español (nativo)</span></a>
               </div>
-              <div class="flex">
+              <div class="flex" data-tooltip="Ver en Ingles" data-tooltip-location="bottom">
                 <a class="lengLink" href="./en.html"><img class="leng" src="public/images/en.svg" alt="Inglés"
                     width="28px">
                   <span class="lengText">Inglés (B2 First)</span></a>
@@ -316,7 +329,7 @@
                 </div>
               </a>
 
-              <div class="a-box">
+              <a href="https://dbd-picker.netlify.app" target="_blank" class="a-box projectLink">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -330,9 +343,9 @@
                     React, Styled Components, CSS.
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="a-box projectMargin">
+              <a href="#" target="_blank" class="a-box projectLink projectMargin">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -346,9 +359,9 @@
                     React, Styled Components, CSS.
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="a-box projectMargin">
+              <a href="#" target="_blank" class="a-box projectLink projectMargin">
                 <div class="img-container">
                   <div class="img-inner">
                     <div class="inner-skew">
@@ -362,7 +375,7 @@
                     ...
                   </div>
                 </div>
-              </div>
+              </a>
 
             </div>
           </div>
@@ -372,6 +385,7 @@
     </div>
   </div>
 </body>
+
 </html>
 
 <script src="scripts.js"></script>
