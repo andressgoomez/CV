@@ -37,6 +37,11 @@
   filter: brightness(120%) saturate(120%);
 }
 
+.projectLink {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 
 .logoLink {
   text-decoration: none;
