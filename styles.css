@@ -367,6 +367,8 @@ body {
 
 @media screen and (max-width: 1060px) {
 
+  
+
   body{
     height: 1550px !important;
   }
@@ -439,6 +441,10 @@ body {
   .a-box {
     height: 250px !important;
     margin-left: 5px !important;
+  }
+
+  .text-container{
+    margin-bottom: 35px !important;
   }
 
 }
@@ -515,7 +521,7 @@ body {
   }
 
   .text-container {
-
+    margin-bottom: 45px !important;
     height: 75px !important;
   }
 
