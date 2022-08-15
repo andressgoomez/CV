@@ -348,7 +348,7 @@ body {
 .card__face {
   position: absolute;
   backface-visibility: hidden;
-
+  -webkit-backface-visibility: hidden;
 }
 
 .card__face--back {
@@ -610,7 +610,6 @@ body {
 [data-tooltip] {
   --arrow-size: 5px;
   position: relative;
-  z-index: 10;
 }
 
 [data-tooltip]:before,

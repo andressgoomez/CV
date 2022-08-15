@@ -56,10 +56,26 @@ window.onload = function () {
   }
 }
 
+
+const gridC = document.getElementById('gridC')
+const stack = document.getElementById('stack')
+const tecnologies = document.getElementById('tecnologies')
+const lenguage = document.getElementById('lenguage')
+
 //Flip project div 
-projectsBoton.addEventListener('click', function () {
-  card.classList.toggle('is-flipped');
-});
+projectsBoton.addEventListener('click', async function () {
+  card.classList.toggle('is-flipped')
+  await new Promise(res => setTimeout(res, 1200));
+  gridC.style.visibility = 'hidden'
+  stack.style.visibility = 'hidden'
+  tecnologies.style.visibility = 'hidden'
+  lenguage.style.visibility = 'hidden'
+  
+})
 cvBoton.addEventListener('click', function () {
+  gridC.style.visibility = 'visible'
+  stack.style.visibility = 'visible'
+  tecnologies.style.visibility = 'visible'
+  lenguage.style.visibility = 'visible'
   card.classList.toggle('is-flipped');
-});
+})
